@@ -9,6 +9,8 @@ public class Manager : MonoBehaviour
     [SerializeField]
     private GameObject tile;
 
+    public static int tileCounter;
+
     void Start()
     {
         SpawnTile();

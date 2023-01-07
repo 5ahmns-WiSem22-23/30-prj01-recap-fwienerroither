@@ -3,15 +3,30 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     Rigidbody2D rb;
+
+    SpriteRenderer sr;
+
     [SerializeField]
     Manager m;
 
     [SerializeField]
+    Sprite standardSprite;
+
+    [SerializeField]
+    Sprite collectedSprite;
+
+    [SerializeField]
     float kmh;
+
+    bool carryingTile;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
+
+        sr.sprite = standardSprite;
+
     }
 
    
@@ -30,12 +45,16 @@ public class Player : MonoBehaviour
         // Es wird überprüft, mit welchem Objekt kollidiert wurde 
         if(collision.CompareTag("Tile"))
         {
-            m.SpawnTile();
+            sr.sprite = collectedSprite;
             Destroy(collision.gameObject);
-            //Item wird nach Collecten wieder gespawnt
+            carryingTile = true;
         }
-        else if (collision.CompareTag("Droppoint"))
+        else if (collision.CompareTag("Droppoint") && carryingTile)
         {
+            sr.sprite = standardSprite;
+            m.SpawnTile();
+            Manager.tileCounter++;
+            carryingTile = false;
 
         }
     }
