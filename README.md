@@ -11,3 +11,8 @@ Player Movement mit altem Input System (vorwärts - rückwärts / links & rechts
 
 ## Entwicklungsplattformen
 MacOS 12.4, Unity 2020.3.18f1, Visual Studio 8.10.25
+
+
+## Optionale Funktionen
+- Timer, nach wessen Ablauf das Spiel automatisch restartet wird
+- Ein Counter, welcher die abgelieferten Geschenke zählt
