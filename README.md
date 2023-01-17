@@ -7,6 +7,7 @@ Collect and Drop Game im Winter-Stil. In diesem Game muss der Player, welcher di
 
 ## Player Movement 
 Player Movement mit altem Input System (vorwärts - rückwärts / links & rechts drehen)
+Der Player kann mit den Pfeiltasten, sowie mit W A S D gesteuert werden
 
 
 ## Entwicklungsplattformen
