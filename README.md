@@ -16,3 +16,8 @@ MacOS 12.4, Unity 2020.3.18f1, Visual Studio 8.10.25
 ## Optionale Funktionen
 - Timer, nach wessen Ablauf das Spiel automatisch restartet wird
 - Ein Counter, welcher die abgelieferten Geschenke zählt
+- Winterliche Texturen
+
+
+## InGame Screenshot
+<img width="844" alt="Bildschirmfoto 2023-01-17 um 21 12 44" src="https://user-images.githubusercontent.com/72389338/213002264-c3062b4a-625b-44a7-b0bb-36b21c4d8589.png">
